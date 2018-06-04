@@ -47,6 +47,12 @@ app.get('/data/moredata', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects'
+  });
+});
+
 //.get takes two arguments
 //the first is a route
 //the second is a function that determines what to do
